@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="http://www.fontsquirrel.com/fonts/open-sans">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Document</title>
+</head>
+<body>
+	<div class="container">
+		<div><button class="close"></button></div>
+		<div class="mbr_sing">
+			Member Sing In
+		</div>
+		<div class="not_mbr" >
+			Not a member yet? <a href="#">Sing up now</a>
+		</div>
+		<form action="/my-form-page" method="post">
+		  <div class="email">
+		    <label class="icon" for="email"><img  src="img/username.svg" alt="Login"></label>
+		    <input type="email"  placeholder="Username / Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username / Email'" id="email" name="user_name" required>
+		  </div>
+
+		  <div class="password">
+		    <label for="password_id" class="icon"><img src="img/password.svg" alt="password"></label>
+		    <input type="password"  placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'" id="password_id" name="user_password" required >
+		    <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
+		  </div>
+
+		  <div class="wrap_button">
+			   <button class="button" type="submit">Sing In</button>
+			  <div class="wrap_check" >
+				  <div class="check_box">
+				    <input id="remember_me" type="checkbox" checked="checked" name="check" value="Remember_me">
+				    <label for="remember_me">
+				    	<span class="checkmark"></span>
+				    	<p>Remember me</p>
+					</label>
+				  </div>
+				  <div><a href="#">Forgot Password?</a></div>
+			  </div>
+		  </div>
+		</form>
+	</div>
+	<footer class="footer">
+		<div><img src="img/freepik.svg" alt="author"></div>
+	</footer>
+	<script src="js/js.js"></script>
+</body>
+</html>
